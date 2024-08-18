@@ -2,32 +2,90 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
+@layer base {
   :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    --background: 0.00 0.00% 100.00%;
+    --foreground: 199 14% 31%;
+
+    --primary: 213.03 94.78% 22.55%;
+    --primary-foreground: 199 14% 100%;
+
+    --card: 210.00 30.00% 96.08%;
+    --card-foreground: 212.73 100.00% 2.16%;
+
+    --popover: 0.00 0.00% 100.00%;
+    --popover-foreground: 212.73 100.00% 2.16%;
+
+    --secondary: 213 53% 47%;
+    --secondary-foreground: 0.00 0.00% 0.00%;
+
+    --muted: 212.73 28.21% 92.35%;
+    --muted-foreground: 0.00 0.00% 40.00%;
+
+    --accent: 212.73 28.21% 92.35%;
+    --accent-foreground: 211.76 100.00% 3.33%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214.29 26.58% 84.51%;
+    --input: 212.31 11.50% 77.84%;
+    --ring: 213.03 94.78% 22.55%;
+
+    --chart-1: 213.03 94.78% 22.55%;
+    --chart-2: 213.26 52.87% 34.12%;
+    --chart-3: 212.96 28.06% 49.61%;
+    --chart-4: 213.00 27.52% 57.25%;
+    --chart-5: 213.06 27.68% 65.29%;
+
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 0.00 0.00% 0.00%;
+    --foreground: 0.00 0.00% 100.00%;
+
+    --primary: 213.03 94.78% 22.55%;
+    --primary-foreground: 212.73 28.21% 92.35%;
+
+    --card: 210.00 16.67% 4.71%;
+    --card-foreground: 211.76 28.81% 88.43%;
+
+    --popover: 0.00 0.00% 0.00%;
+    --popover-foreground: 211.76 28.81% 88.43%;
+
+    --secondary: 213.07 52.70% 47.25%;
+    --secondary-foreground: 0.00 0.00% 100.00%;
+
+    --muted: 0.00 0.00% 9.80%;
+    --muted-foreground: 0.00 0.00% 50.20%;
+
+    --accent: 213.16 95.00% 7.84%;
+    --accent-foreground: 211.76 28.81% 88.43%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214.29 91.30% 4.51%;
+    --input: 216.00 11.36% 17.25%;
+    --ring: 213.03 94.78% 22.55%;
+
+    --chart-1: 213.03 94.78% 22.55%;
+    --chart-2: 213.26 93.88% 19.22%;
+    --chart-3: 212.96 94.67% 14.71%;
+    --chart-4: 213.00 93.75% 12.55%;
+    --chart-5: 213.06 96.08% 10.00%;
+
+    --radius: 0.5rem;
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
   }
 }
