@@ -1,19 +1,19 @@
-import Image from 'next/image'
+import Image from "next/image";
 
 export default function AboutTeam() {
   return (
-    <section className="flex min-w-full min-h-screen bg-secondary text-background">
-      <div className="flex justify-center w-1/2 max-w-[820px]">
+    <section className="flex min-h-screen min-w-full bg-secondary py-6 text-background">
+      <div className="flex w-1/2 max-w-[820px] justify-center">
         <Image
-          className="min-w-full min-h-full object-cover object-right"
+          className="min-h-full min-w-full object-cover object-right"
           alt="Logo Atitude CT"
-          src={'/hands.png'}
+          src={"/hands.png"}
           width={1920}
           height={1080}
         />
       </div>
-      <div className="flex flex-col justify-center text-end w-full px-12 xl:px-60">
-        <h1 className="text-6xl font-bold pb-6">Nossa equipe</h1>
+      <div className="flex w-full flex-col justify-center px-12 text-end lg:px-16">
+        <h1 className="pb-6 text-6xl font-bold">Nossa equipe</h1>
         <p className="text-xl">
           A Atitude CT é composta por uma equipe altamente qualificada e
           experiente, formada por consultores especializados em diversas áreas
@@ -27,5 +27,5 @@ export default function AboutTeam() {
         </p>
       </div>
     </section>
-  )
+  );
 }

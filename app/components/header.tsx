@@ -1,19 +1,21 @@
-import LogoIcon from './svg/logo-icon'
+import LogoIcon from "./svg/logo-icon";
 
 export default function _Header() {
   return (
-    <header className="flex min-w-full justify-center bg-primary text-background">
+    <header className="sticky top-0 z-10 flex min-w-full justify-center bg-primary text-background">
       <nav className="flex w-full max-w-screen-lg justify-between px-12 py-4 font-bold">
-        <div className="flex items-center gap-x-4">
-          <LogoIcon fill="#fff" opacity="1" width="45" height="45" />
-          <h1 className="font-bold text-3xl">
-            ATITUDE
-            {/* <small className="font-normal text-lg pl-2">
+        <div>
+          <a href="/" className="flex items-center gap-x-4">
+            <LogoIcon fill="#fff" opacity="1" width="45" height="45" />
+            <h1 className="text-3xl font-bold">
+              ATITUDE
+              {/* <small className="font-normal text-lg pl-2">
               Consultoria e Treinamento
-            </small> */}
-          </h1>
+              </small> */}
+            </h1>
+          </a>
         </div>
-        <ul className="flex gap-4 items-center font-normal text-xl">
+        <ul className="flex items-center gap-4 text-xl font-normal">
           <li>
             <a href="#">Sobre</a>
           </li>
@@ -29,5 +31,5 @@ export default function _Header() {
         </ul>
       </nav>
     </header>
-  )
+  );
 }
