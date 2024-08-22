@@ -1,6 +1,7 @@
 import Header from './components/header'
 import About from './sections/about'
 import AboutTeam from './sections/about-team'
+import Engajar from './sections/engajar'
 import Slogan from './sections/sloga'
 import Solutions from './sections/solutions'
 
@@ -12,6 +13,7 @@ export default function Home() {
       <About />
       <AboutTeam />
       <Solutions />
+      <Engajar />
     </main>
   )
 }

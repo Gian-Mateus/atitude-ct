@@ -12,7 +12,7 @@ export default function AboutTeam() {
           height={1080}
         />
       </div>
-      <div className="flex flex-col justify-center text-end w-full px-12 lg:px-60">
+      <div className="flex flex-col justify-center text-end w-full px-12 xl:px-60">
         <h1 className="text-6xl font-bold pb-6">Nossa equipe</h1>
         <p className="text-xl">
           A Atitude CT é composta por uma equipe altamente qualificada e

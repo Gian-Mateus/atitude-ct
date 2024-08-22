@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 export default function About() {
   return (
-    <section className="flex min-w-full min-h-screen text-gray px-20 bg-about bg-no-repeat bg-left bg-contain">
+    <section className="flex min-w-full min-h-screen text-gray px-20 py-12 bg-about bg-no-repeat bg-left bg-contain">
       <div className="w-[55%] flex flex-col justify-center">
         <h1 className="text-6xl text-gray font-bold pb-6">
           Sobre a Atitude CT
