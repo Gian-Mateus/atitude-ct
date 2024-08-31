@@ -2,10 +2,10 @@ import Image from "next/image";
 
 export default function AboutTeam() {
   return (
-    <section className="flex min-h-screen min-w-full bg-secondary py-6 text-background">
-      <div className="flex w-1/2 max-w-[820px] justify-center">
+    <section className="flex min-h-screen min-w-full bg-secondary py-6 text-background flex-col md:flex-row">
+      <div className="flex sm:w-1/2 max-w-[820px] justify-center">
         <Image
-          className="min-h-full min-w-full object-cover object-right"
+          className="min-h-full min-w-full object-cover object-right mr-48"
           alt="Logo Atitude CT"
           src={"/hands.png"}
           width={1920}

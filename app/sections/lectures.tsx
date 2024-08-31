@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Palestras() {
   return (
-    <section className="flex min-h-screen min-w-full flex-col items-center bg-secondary text-background md:flex-row">
+    <section className="flex min-h-screen min-w-full flex-col items-center justify-center bg-secondary text-background md:flex-row">
       <div className="my-6 px-8">
         <h1 className="text-2xl font-bold">
           Aumente o conhecimento da sua equipe com nossos cursos e palestras.

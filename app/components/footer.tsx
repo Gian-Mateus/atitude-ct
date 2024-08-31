@@ -5,7 +5,7 @@ import Email from "./svg/email";
 
 export default function _Footer() {
   return (
-    <footer className="flex min-h-screen min-w-full flex-col justify-end bg-foreground p-12 font-extralight text-background">
+    <footer className="flex min-w-full flex-col justify-end bg-foreground p-12 font-extralight text-background md:min-h-screen">
       <div className="my-12 flex">
         <div className="max-w-44">
           <Image
@@ -47,21 +47,21 @@ export default function _Footer() {
         <p className="md:order1 order-2 flex items-center">
           &copy; Atitude CT, 2024. Todos os direitos reservados
         </p>
-        <div className="order-1 flex items-center gap-x-3 md:order-2 mb-6">
+        <div className="order-1 mb-6 flex items-center gap-x-3 md:order-2">
           <h6>Sigam-nos:</h6>
           <ul className="flex">
             <li>
-              <a href="">
+              <a href="wa.me/554791656432">
                 <Whatsapp />
               </a>
             </li>
             <li>
-              <a href="">
+              <a href="https://www.instagram.com/atitude.ct.empresarial/">
                 <Instagram />
               </a>
             </li>
             <li>
-              <a href="">
+              <a href="mailto:mailto:consultor@atitudect.com.br">
                 <Email />
               </a>
             </li>
